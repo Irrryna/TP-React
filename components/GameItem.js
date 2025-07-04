@@ -1,4 +1,3 @@
-// components/GameItem.js
 import React from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
 
@@ -25,7 +24,7 @@ export default function GameItem({ game }) {
 
 const styles = StyleSheet.create({
   card: {
-    width: 160, // environ 4:3 en portrait
+    width: 160,
     height: 210,
     margin: 10,
     backgroundColor: '#fff',

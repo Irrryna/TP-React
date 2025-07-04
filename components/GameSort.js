@@ -5,7 +5,7 @@ export default function GameSort({ sortOrder, onChangeSort }) {
   return (
     <View style={styles.container}>
       <Button
-        title="Pas de tri"
+        title="Nos sugestions"
         onPress={() => onChangeSort(null)}
         color={sortOrder === null ? '#4a90e2' : '#888'}
       />
@@ -26,7 +26,8 @@ export default function GameSort({ sortOrder, onChangeSort }) {
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
+    width: '90%',
     marginBottom: 10,
   },
 });
