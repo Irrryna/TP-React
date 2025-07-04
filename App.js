@@ -7,6 +7,9 @@ import GameForm from './components/GameForm';
 import Header from './components/Header';
 import GameFilters from './components/GameFilters';
 import GameSort from './components/GameSort';
+// Import des images
+import lastofusImg from './assets/images/lastofus.png';
+import fifaImg     from './assets/images/fifa.png';
 
 export default function App() {
   const [games, setGames] = useState([
@@ -14,13 +17,15 @@ export default function App() {
       "id": 1,
       "titre": "The Last of Us Part II",
       "prix": 25,
-      "genre": "Action-Aventure"
+      "genre": "Action-Aventure",
+      image: lastofusImg,
     },
     {
       "id": 2,
       "titre": "FIFA 23",
       "prix": 20,
-      "genre": "Sport"
+      "genre": "Sport",
+      image: fifaImg,
     },
     {
       "id": 3,
@@ -139,6 +144,8 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: 40,
     alignItems: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: '#cacaca', 
   },
 });
+
+
